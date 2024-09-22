@@ -15,25 +15,29 @@
                 <p id="calculator-result-data">
                     
                 </p>
+                <p id="calculator-result-info">
+
+                </p>
                 <div id="calculator-result-detail">
                 </div>
             </div>
-            <div class="calculator-item">9</div>
-            <div class="calculator-item">8</div>
-            <div class="calculator-item">7</div>
-            <div class="calculator-item operation">+</div>
-            <div class="calculator-item ">6</div>
-            <div class="calculator-item">5</div>
-            <div class="calculator-item">4</div>
-            <div class="calculator-item operation">+</div>
-            <div class="calculator-item">3</div>
-            <div class="calculator-item">2</div>
-            <div class="calculator-item">1</div>
-            <div class="calculator-item operation">+</div>
-            <div class="calculator-item">0</div>
+            <div class="calculator-item" onclick="takeValues(this)">9</div>
+            <div class="calculator-item" onclick="takeValues(this)">8</div>
+            <div class="calculator-item" onclick="takeValues(this)">7</div>
+            <div class="calculator-item operation" onclick="chooseOperator('+')">+</div>
+            <div class="calculator-item" onclick="takeValues(this)">6</div>
+            <div class="calculator-item" onclick="takeValues(this)">5</div>
+            <div class="calculator-item" onclick="takeValues(this)">4</div>
+            <div class="calculator-item operation" onclick="chooseOperator('-')">-</div>
+            <div class="calculator-item" onclick="takeValues(this)">3</div>
+            <div class="calculator-item" onclick="takeValues(this)">2</div>
+            <div class="calculator-item" onclick="takeValues(this)">1</div>
+            <div class="calculator-item operation" onclick="chooseOperator('x')">X</div>
+            <div class="calculator-item" onclick="takeValues(this)">0</div>
             <div class="calculator-item">.</div>
-            <div class="calculator-item">=</div>
-            <div class="calculator-item operation">+</div>
+            <div class="calculator-item" onclick="operate()">=</div>
+            <div class="calculator-item operation" onclick="chooseOperator('/')">/</div>
+            <div class="calculator-item" onclick="clearResult()">Clear</div>
         </div>
     </main>
 
